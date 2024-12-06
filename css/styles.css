@@ -640,7 +640,12 @@ body *:focus {
         font-size: calc(12px + 0.3vw);
         line-height: 25px;
         margin-top: 10px;
-        overflow: scroll;
+        overflow-y: auto;
+        scrollbar-width: none;
+    }
+
+    #about .image-wrapper p::-webkit-scrollbar {
+        display: none;
     }
 
     #about .image-wrapper h4 {
