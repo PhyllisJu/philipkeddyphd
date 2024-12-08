@@ -717,8 +717,8 @@ body *:focus {
         column-gap: 20px;
     }
 
-    #about .mobile-image-overlay {
-        display: none;
+    .mobile-image-overlay h4, .mobile-image-overlay p {
+        text-align: center;
     }
 
     #about .image-wrapper .image-overlay {
