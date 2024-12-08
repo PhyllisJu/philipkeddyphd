@@ -109,6 +109,10 @@ h3 {
     cursor: pointer;
 }
 
+.navigation-menu .current-page:hover {
+    background-color: #FFF8F1;
+}
+
 .navigation-menu .current-page a {
     color: #8A5422;
 }
@@ -248,6 +252,12 @@ body *:focus {
     padding: 20px 10px;
     margin: 20px auto 0 auto;
     font-size: calc(15px + 0.2vw);
+    transition: all 0.3s ease-in-out;
+}
+
+#home #services-btn:hover {
+    background-color: #A2672E;
+    color: #FFF8F1;
 }
 
 /* about page */
@@ -462,6 +472,53 @@ body *:focus {
     font-weight: 400;
 }
 
+/* 404 page */
+#page404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 30px 30px 30px;
+}
+
+#page404 img {
+    width: 100%;
+    max-width: 700px;
+}
+
+#page404 h1, h2 {
+    font-size: calc(30px + 0.5vw);
+    margin-bottom: 10px;
+}
+
+#page404 h1 {
+    font-weight: 800;
+}
+
+#page404 p {
+    margin: 30px 0;
+    text-align: center;
+}
+
+#page404 a {
+    display: block;
+    text-align: center;
+    width: 50%;
+    min-width: 150px;
+    max-width: 200px;
+    background-color: #BFA693;
+    text-decoration: none;
+    color: black;
+    padding: 20px 10px;
+    margin: 0 auto;
+    font-size: calc(15px + 0.2vw);
+    transition: all 0.3s ease-in-out;
+}
+
+#page404 a:hover {
+    background-color: #A2672E;
+    color: #FFF8F1;
+}
 
 @media screen and (min-width: 1100px) {
     p, li, label {
@@ -541,6 +598,11 @@ body *:focus {
         padding: 8px 30px;
         margin: 0;
         width: auto;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .navigation-menu li:hover {
+        background-color: #BFA693;
     }
 
     .navigation-menu .current-page {
@@ -755,5 +817,32 @@ body *:focus {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 20px;
+    }
+
+    /* 404 page */
+    #page404 {
+        width: 65%;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 150px;
+    }
+
+    #page404 img {
+        max-width: fit-content;
+    }
+
+    #page404 h1, h2 {
+        font-size: calc(40px + 0.5vw);
+        margin-bottom: 25px;
+        text-align: left;
+    }
+
+    #page404 p {
+        margin: 80px 0 40px 0;
+        text-align: left;
+    }
+
+    #page404 a {
+        margin: 0;
     }
 }
