@@ -31,12 +31,20 @@
         </header>
     </div>
 
+    <div class="mobile-image-overlay hidden">
+        <img id="gallery-back-btn" src="images/left-arrow.png" alt="Go back">
+        <img id="img-element" src="images/gallery1.jpg"
+            alt="This is Josie, my German Shepherd, and me, walking on the Berkeley campus, looking for squirrels! The weather was sunny.">
+        <h4>Josie and Me</h4>
+        <p>This is Josie, my German Shepherd, and me, walking on the Berkeley campus, looking for
+            squirrels!</p>
+    </div>
 
     <main id="about">
         <section id="intro">
             <div id="intro-title">
                 <h2>About</h2>
-                <h3>Philip Keddy, Therapist</h3>
+                <h3>Dr. Philip Keddy, Psychologist</h3>
             </div>
             <div id="intro-content">
                 <img src="images/headshot2.jpg"
@@ -58,7 +66,7 @@
             <h3>My Photo Gallery</h3>
             <div id="gallery-container">
                 <div id="gallery-left">
-                    <div class="image-wrapper">
+                    <div class="image-wrapper" id="img1">
                         <img src="images/gallery1.jpg"
                             alt="This is Josie, my German Shepherd, and me, walking on the Berkeley campus, looking for squirrels! The weather was sunny.">
                         <div class="image-overlay">
@@ -67,7 +75,7 @@
                                 squirrels!</p>
                         </div>
                     </div>
-                    <div class="image-wrapper">
+                    <div class="image-wrapper" id="img4">
                         <img src="images/gallery4.jpg" alt="A picture of the entryway to my office.">
                         <div class="image-overlay">
                             <h4>Entryway to My Office</h4>
@@ -77,7 +85,7 @@
                 </div>
                 <div id="gallery-right">
                     <div id="gallery-subcontainer">
-                        <div class="image-wrapper">
+                        <div class="image-wrapper" id="img2">
                             <img src="images/gallery2.jpg" alt="Josie is looking over my shoulder in the car.">
                             <div class="image-overlay">
                                 <h4>Car Companion</h4>
@@ -85,7 +93,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="image-wrapper">
+                        <div class="image-wrapper" id="img3">
                             <img src="images/gallery3.jpg"
                                 alt="I am with my friends' dogs, Jazz and Indigo, in Canada.">
                             <div class="image-overlay">
@@ -95,7 +103,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="image-wrapper">
+                    <div class="image-wrapper" id="img5">
                         <img src="images/gallery5.jpg"
                             alt="This is a photo of Dr. Keddy's office. There are two recliner chairs and cushions on them. There is also a bookcase.">
                         <div class="image-overlay">
@@ -111,9 +119,12 @@
             <div id="experience-intro">
                 <h2>Experience</h2>
                 <h3>Professional Journey</h3>
-                <p>Philip's professional journey has been marked by a commitment to continuous learning and growth. His
-                    experiences have shaped his empathetic and effective counseling style, allowing him to connect with
-                    clients on a deeper level.</p>
+                <p> I have been an independent practitioner since 1987, specializing in psychotherapy and psychological
+                    testing services. For 11 years I worked as a half-time staff psychologist in an adult outpatient
+                    program for individuals with substance use disorders at Kaiser Permanente. Prior to that, I served
+                    as a full-time staff psychologist in a residential therapeutic community for Catholic Clergy and
+                    Religious, offering therapy and assessment services. Before obtaining my license, I completed 8
+                    years of psychology internships across various settings.</p>
                 <h2>Qualifications</h2>
             </div>
             <div id="qualifications">
@@ -159,6 +170,7 @@
 
     <!-- javascripts -->
     <script src="js/hamburger_menu.js"></script>
+    <script src="js/mobile_gallery.js"></script>
     <script src="js/footer.js"></script>
 </body>
 
